@@ -1,0 +1,6 @@
+# pg_query_stats.control
+
+# Specifies the default version of the extension
+default_version = '1.0.0'
+
+relocatable = true

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "lwlock.h": "c",
+        "shmem.h": "c",
+        "ipc.h": "c",
+        "guc.h": "c",
+        "timestamp.h": "c",
+        "miscadmin.h": "c",
+        "executor.h": "c",
+        "fmgr.h": "c",
+        "funcapi.h": "c",
+        "postgres.h": "c"
+    }
+}
