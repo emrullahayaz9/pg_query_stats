@@ -26,3 +26,6 @@ This repository includes:
 ```bash
 make
 sudo make install
+
+<img width="1259" height="947" alt="Screenshot From 2025-08-01 16-54-10" src="https://github.com/user-attachments/assets/8484c47e-677a-4d8e-b0be-2369e069cfc4" />
+
