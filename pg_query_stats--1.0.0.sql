@@ -1,22 +1,6 @@
--- -- pg_query_stats--1.0.sql
-
--- CREATE OR REPLACE FUNCTION pg_query_stats_get_counter()
--- RETURNS bigint
--- AS 'pg_query_stats', 'pg_query_stats_get_counter'
--- LANGUAGE C STRICT;
-
--- CREATE OR REPLACE FUNCTION pg_query_stats_reset_counter()
--- RETURNS void
--- AS 'pg_query_stats', 'pg_query_stats_reset_counter'
--- LANGUAGE C STRICT;
-/* pg_query_stats--1.0.sql */
-
-/* pg_query_stats--1.0.sql */
-
 -- complain if script is sourced in psql, rather than via CREATE EXTENSION
 \echo Use "CREATE EXTENSION pg_query_stats" to load this file. \quit
 
--- Register functions
 CREATE FUNCTION pg_query_stats()
 RETURNS SETOF record
 AS 'pg_query_stats', 'pg_query_stats'
@@ -27,7 +11,6 @@ RETURNS void
 AS 'pg_query_stats', 'pg_query_stats_reset'
 LANGUAGE C STRICT;
 
--- Create a view for easier access
 CREATE VIEW pg_query_stats AS
 SELECT 
     query_text::text,
